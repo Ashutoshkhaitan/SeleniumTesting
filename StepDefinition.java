@@ -24,6 +24,7 @@ public class StepDefinition {
 	
 	WebDriver driver;
 	String appURL ="http://myntra.com" ;
+	String formURL="https://mgsdemo.mgscoder.com/mgscode/regform/index-2.html";
 	
 @Before
 public void start()
@@ -117,6 +118,39 @@ public void Calculates_the_page_load_time_in_phantomJS() throws Throwable {
 	    System.out.println("Load Time from end to end perspective: " +(pageLoadTime_Seconds+ pageLoadTime_Seconds2) + " seconds");
 	    driver.close();
 }
+
+
+@When("^Application is opened$")
+public void application_is_opened() throws Throwable {
+	driver=new ChromeDriver();
+	driver.navigate().to(formURL);
+    throw new PendingException();
+}
+
+@Then("^Determine no of forms present on page$")
+public void determine_no_of_forms_present_on_page() throws Throwable {
+    
+    throw new PendingException();
+}
+
+@Then("^Traverse the form with appropriate data and complete the wizard$")
+public void traverse_the_form_with_appropriate_data_and_complete_the_wizard() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^Run (\\d+) times with random data$")
+public void run_times_with_random_data(int arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@Then("^verify message \"([^\"]*)\"$")
+public void verify_message(String arg1) throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
 
 
 }
