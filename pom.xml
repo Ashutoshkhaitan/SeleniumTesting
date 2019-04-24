@@ -19,7 +19,12 @@
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>3.141.59</version>
-    </dependency>  
+    </dependency> 
+    <dependency>
+    <groupId>io.codearte.jfairy</groupId>
+    <artifactId>jfairy</artifactId>
+    <version>0.5.9</version>
+</dependency> 
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-server</artifactId>
